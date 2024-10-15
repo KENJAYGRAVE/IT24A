@@ -86,6 +86,6 @@ class WeatherApp {
             return null;
         }
 }
-const apiKey = ''; 
+const apiKey = '4cb1df4e5998ae64822540a13bd001bb'; 
 const weatherApp = new WeatherService(apiKey);
 
