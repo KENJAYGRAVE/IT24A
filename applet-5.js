@@ -14,6 +14,7 @@ class WeatherApp {
         this.description = document.getElementById('description');
         this.humidity = document.getElementById('humidity');
         this.windSpeed = document.getElementById('windSpeed');
+        this.APIKeyInput = document.getElementById('apiInput');
 
         this.getWeatherBtn.addEventListener('click', () => this.fetchWeather());
         this.getLocationBtn.addEventListener('click', () => this.fetchWeatherByLocation());
@@ -100,6 +101,5 @@ class WeatherApp {
         }
 }
 
-const apiKey = '4cb1df4e5998ae64822540a13bd001bb'; 
-const weatherApp = new WeatherService(apiKey);
+const weatherApp = new WeatherService();
 
